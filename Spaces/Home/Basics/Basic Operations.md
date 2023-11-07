@@ -10,7 +10,7 @@ The Information from [[Data Types]] will be mentioned here.
 		- `and` and `or` are short-circuiting boolean operators. 
 			- These are very close to regular and and or binary logic but with one major difference, as soon as they find a result they stop evaluating the expression. 
 			- `||` (pipes) and `&&` (ampersands) are very close to their siblings, however they accept types other than booleans.  
-		- `!` will reverse a boolean or a value va
+		- `!` will reverse a boolean. `!42` will return `false`, while `!false` or `!nil` will return `true`. Fun fact: This is a non-strict version of just typing out `not`! 
 ```elixir
 -20 || true
 # ^ Returns -20 because remember how everything but nil and false return true? 
@@ -18,8 +18,10 @@ The Information from [[Data Types]] will be mentioned here.
 false || 42
 # ^ returns 42
 
-false or true
-# ^ returns true. if there were more booleans (which there won't be) it'll short circuit at this true. 
 
+```
+```elixir
+false or true
+# ^ returns true. if there were more booleans (which there won't be) it'll short circuit and stop evaluating the moment it completes. 
 
 ```
