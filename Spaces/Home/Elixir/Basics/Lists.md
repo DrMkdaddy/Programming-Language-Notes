@@ -9,7 +9,7 @@ Related to [[Data Types]].
 			- This lends itself to a First-In First Out approach to handling these lists. 
 		- You can subtract and concatenate 
 - Tuples
-	- 
+	- balsa
 - Keyword Lists
 	- 
 - Maps
