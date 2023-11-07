@@ -13,6 +13,8 @@ Many times there will be strange comparisons between types because of how this w
 
 Elixir has both string interpolation (very similar to Python's F Strings) and String Concatenation. 
 ```elixir
-
+	String Interpolation
+		name = "Sean"
+		
 ```
 
