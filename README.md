@@ -1,4 +1,4 @@
-I am learning Elixir
+I am learning Elixir right now. I will expand this now that I think about it to other languages perhaps. 
 
 
 Plugins used in the Obsidian Vault: 

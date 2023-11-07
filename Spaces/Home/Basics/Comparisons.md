@@ -15,6 +15,12 @@ Elixir has both string interpolation (very similar to Python's F Strings) and St
 ```elixir
 	String Interpolation
 		name = "Sean"
-		
+		"Hello, #{name}"
+		# ^ Returns Hello, Sean
+	String Concatenation 
+		name = "Alex"
+		"Hello, " <> name
+		# ^ Returns Hello, Alex
+	
 ```
 
