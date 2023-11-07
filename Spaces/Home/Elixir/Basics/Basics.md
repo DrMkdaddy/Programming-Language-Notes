@@ -1,5 +1,5 @@
 ---
-sticker: lucide//database
+sticker: lucide//list
 banner: 
 _contexts:
   - "#Stuff"

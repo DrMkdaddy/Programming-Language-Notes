@@ -1,5 +1,5 @@
 ---
-sticker: emoji//1f45a
+sticker: vault//SVG Icons/Nerd Fonts/type-hierarchy-60345.svg
 ---
 The Information from [[Data Types]] will be mentioned here. 
 

@@ -1,5 +1,5 @@
 ---
-sticker: lucide//file-type
+sticker: vault//SVG Icons/Nerd Fonts/group-by-ref-type-60311.svg
 ---
 Basic Data Types in Elixir: 
 - Integers

@@ -1,3 +1,6 @@
+---
+sticker: vault//SVG Icons/Nerd Fonts/distribute-vertical-center-987596.svg
+---
 Related to [[Data Types]]. 
 - Lists
 	- Lists are simple unordered collections of values, they don't have to be unique nor of the same type. 

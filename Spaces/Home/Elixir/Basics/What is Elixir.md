@@ -1,5 +1,5 @@
 ---
-sticker: emoji//2753
+sticker: vault//SVG Icons/Nerd Fonts/question_sign-61529.svg
 ---
 This is standard boiler plate but I want to list out the features that the elixir language has. 
 - Embraces the functional programming paradigm, with immutable variables and first class functions.
