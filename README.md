@@ -10,3 +10,5 @@ Plugins used in the Obsidian Vault:
 - Style Settings
 - Tasks
 - Version History Diff
+
+Right now I am following https://elixirschool.com. If I 
