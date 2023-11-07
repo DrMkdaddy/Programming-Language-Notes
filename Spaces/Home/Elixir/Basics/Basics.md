@@ -1,4 +1,6 @@
 ---
 sticker: lucide//database
-banner:
+banner: 
+_contexts:
+  - "#Stuff"
 ---
