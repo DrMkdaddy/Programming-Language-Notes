@@ -1,5 +1,4 @@
 ---
-banner: https://64.media.tumblr.com/56ba54b9a4d17b1b092c6f70e640bc4d/tumblr_novhbt5qo21upeue5o1_500.gif
 ---
 Basic Data Types in Elixir: 
 - Integers
