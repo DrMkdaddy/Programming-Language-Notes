@@ -25,6 +25,9 @@ false or true
 # ^ returns true. if there were more booleans (which there won't be) it'll short circuit and stop evaluating the moment it completes. 
 true and 42
 # ^ returns true. 
-
+not false 
+#^ returns true
+not 42
+#
 
 ```
