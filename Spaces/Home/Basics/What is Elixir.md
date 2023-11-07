@@ -1,3 +1,6 @@
+---
+sticker: emoji//2753
+---
 This is standard boiler plate but I want to list out the features that the elixir language has. 
 - Embraces the functional programming paradigm, with immutable variables and first class functions.
 - Python-like syntax

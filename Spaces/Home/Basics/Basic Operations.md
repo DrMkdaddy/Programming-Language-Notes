@@ -1,3 +1,6 @@
+---
+sticker: emoji//1f45a
+---
 The Information from [[Data Types]] will be mentioned here. 
 
 - Integers and Floats
@@ -17,8 +20,6 @@ The Information from [[Data Types]] will be mentioned here.
 # It even short circuits and returns true. 
 false || 42
 # ^ returns 42
-
-
 ```
 ```elixir
 false or true
@@ -26,8 +27,7 @@ false or true
 true and 42
 # ^ returns true. 
 not false 
-#^ returns true
+# ^ returns true
 not 42
-#
-
+# ^ ArgumentError
 ```

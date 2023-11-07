@@ -1,4 +1,5 @@
 ---
+sticker: lucide//file-type
 ---
 Basic Data Types in Elixir: 
 - Integers
