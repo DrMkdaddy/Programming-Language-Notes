@@ -1,0 +1,2 @@
+- Integers and Floats
+	- They both support basic arithmetic operators like `*` for multiplication, `+ and `-` 
