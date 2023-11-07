@@ -1,3 +1,5 @@
+The Information from [[Data Types]] will be mentioned here. 
+
 - Integers and Floats
 	- They both support basic arithmetic operators like 
 		- `* and /` for multiplication and division
@@ -7,8 +9,17 @@
 	- Booleans have basic operators that are very close to logic gates.
 		- `and` and `or` are short-circuiting boolean operators. 
 			- These are very close to regular and and or binary logic but with one major difference, as soon as they find a result they stop evaluating the expression. 
-			- 
+			- `||` (pipes) and `&&` (ampersands) are very close to their siblings, however they accept types other than booleans.  
+		- `!` will reverse a boolean or a value va
 ```elixir
+-20 || true
+# ^ Returns -20 because remember how everything but nil and false return true? 
+# It even short circuits and returns true. 
+false || 42
+# ^ returns 42
+
+false or true
+# ^ returns true. if there were more booleans (which there won't be) it'll short circuit at this true. 
+
 
 ```
-		- `||` (pipes) and `&&` (ampersands) are very close to their siblings, however they accept types other than booleans.  
