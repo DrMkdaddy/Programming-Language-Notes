@@ -5,4 +5,7 @@
 		- `+ and -` for addition and subtraction
 - Booleans
 	- Booleans have basic operators that are very close to logic gates.
-		- `||` 
+		- `and` and `or` are short-circuiting boolean operators. 
+			- These are very close to regular and and or binary logic but with one major difference, as soon as they find a result they stop evaluating the expression. 
+			- 
+		- `||` (pipes) and `&&` (ampersands) are very close to their siblings, however they accept types other than booleans.  
