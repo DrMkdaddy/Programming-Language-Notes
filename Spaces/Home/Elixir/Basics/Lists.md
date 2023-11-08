@@ -34,7 +34,9 @@ Related to [[Data Types]].
 	- Defined using %{}. 
 	- With maps there is a special syntax for maps that only use atoms as their keys. 
 		- `{foo: "bar", hello: "world"}` returns `%{foo: "bar", hello: "world"}`
-		  
+		- `%{foo: "bar", hello: "world"} == %{:foo => "bar", :hello => "world"}` returns `true`
+			- This is good to know as this helps to bridge my learning gap between elixir and python! 
+	- Something else about 
 ```elixir
 map = %{:foo => "bar", "hello" => :world}
 # ^ returns %{:foo => "bar", "hello" => :world}
