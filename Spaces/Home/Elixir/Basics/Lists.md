@@ -36,7 +36,10 @@ Related to [[Data Types]].
 		- `{foo: "bar", hello: "world"}` returns `%{foo: "bar", hello: "world"}`
 		- `%{foo: "bar", hello: "world"} == %{:foo => "bar", :hello => "world"}` returns `true`
 			- This is good to know as this helps to bridge my learning gap between elixir and python! 
-	- Something else about 
+	- Something else about maps is that they provide their own syntax for updating a key. 
+		- `map = %{foo: "bar", hello: "world"}` returns `%{foo: "bar", hello: "world"}`
+		- `%{map | foo: "baz"}` returns `%{foo: "baz", hello: "world"}`
+			- There is a problem with this approach. It does require 
 ```elixir
 map = %{:foo => "bar", "hello" => :world}
 # ^ returns %{:foo => "bar", "hello" => :world}
