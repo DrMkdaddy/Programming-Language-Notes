@@ -27,4 +27,14 @@ Related to [[Data Types]].
 		- `[{:foo, "bar"}, {:hello, "world"}]` returns `[foo: "bar", hello: "world"]`
 			- As I can see these have the same returns. I will likely use the second method of writing it as it is much more explicit to me. 
 - Maps
-	- Equivalent to dictionaries. 
+	- Equivalent to dictionaries. The traditional Key-Value Store. 
+	- Defined using %{}. 
+```elixir
+map = %{:foo => "bar", "hello" => :world}
+# ^ returns %{:foo => "bar", "hello" => :world}
+map[:foo]
+# ^ returns "bar"
+map["hello"]
+# ^ returns :world
+# As of Elixir 1.2 variables can also be used as keys
+```
