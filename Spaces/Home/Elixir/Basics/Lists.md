@@ -10,6 +10,10 @@ Related to [[Data Types]].
 		- You can subtract and concatenate from lists. 
 			- NOTE: Lists use strict comparisons for ints and floats. 
 			- `["foo", :bar, 42] -- [42, "bar"]` returns `["foo", :bar]` because while an atom's value is its own name it is not its name. 
+			- `[1,2,2,3,2,3] -- [1,2,3,2]` returns `[2, 3]` because values will kill themselves from right to left. 
+		- There are helper functions to help you grab a head (the first-most value on a list) and the tail (the rest of the list). 
+			- `hd [3.14, :pie, "Apple"]` returns `3.14` as it is the head. 
+			- `tl [3.14, :pie, "Apple"]` returns `[:pie, "Apple"]`
 - Tuples
 	- 
 - Keyword Lists
