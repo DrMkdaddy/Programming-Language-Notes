@@ -16,6 +16,9 @@ Related to [[Data Types]].
 			- `tl [3.14, :pie, "Apple"]` returns `[:pie, "Apple"]`
 - Tuples
 	- Tuples are like lists but with one major difference, they are stored contiguously in memory. It's quick to access their data but expensive to prepend or append more values. 
+	- Closest to traditional arrays. More or less the inverse of a List. 
+		- While looking up a value is O(1) unlike the list's O(N) look up time. 
+		- Adding a new value is O(N) while with a list it is O(1).
 		- This is because an entirely new copy of the tuple must be put into memory, instead of being appended or prepended to. 
 		- Tuples are a common way for functions to return information. 
 	- `{3.14, :pie, "Apple"}` returns `{3.14, :pie, "Apple"}`
@@ -29,6 +32,9 @@ Related to [[Data Types]].
 - Maps
 	- Equivalent to dictionaries. The traditional Key-Value Store. 
 	- Defined using %{}. 
+	- With maps there is a special syntax for maps that only use atoms as their keys. 
+		- `{foo: "bar", hello: "world"}` returns `%{foo: "bar", hello: "world"}`
+		  
 ```elixir
 map = %{:foo => "bar", "hello" => :world}
 # ^ returns %{:foo => "bar", "hello" => :world}
