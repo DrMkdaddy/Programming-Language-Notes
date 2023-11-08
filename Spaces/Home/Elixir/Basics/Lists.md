@@ -21,6 +21,10 @@ Related to [[Data Types]].
 	- `{3.14, :pie, "Apple"}` returns `{3.14, :pie, "Apple"}`
 	- `File.read("path/to/existing/file")` would return `{:ok, "... contents ..."}`
 - Keyword Lists
-	- 
+	- Keyword lists are a special list of tuple where the first value is an atom. 
+	- These have similar performance to lists and are also used as ways to pass optional arguments to functions. 
+		- `[foo: "bar", hello: "world"]` returns `[foo: "bar", hello: "world"]`
+		- `[{:foo, "bar"}, {:hello, "world"}]` returns `[foo: "bar", hello: "world"]`
+			- As I can see these have the same returns. I will likely use the second method of writing it as it is much more explicit to me. 
 - Maps
-	- 
+	- Equivalent to dictionaries. 
