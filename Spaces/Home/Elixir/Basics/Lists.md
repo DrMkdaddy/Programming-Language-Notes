@@ -15,7 +15,8 @@ Related to [[Data Types]].
 			- `hd [3.14, :pie, "Apple"]` returns `3.14` as it is the head. 
 			- `tl [3.14, :pie, "Apple"]` returns `[:pie, "Apple"]`
 - Tuples
-	- 
+	- Tuples are like lists but with one major difference, they are stored contiguously in memory. It's quick to access their data but expensive to prepend or append more values. 
+		- This is because an entirely new copy of the tuple must be put into memory, instead of 
 - Keyword Lists
 	- 
 - Maps
