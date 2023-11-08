@@ -40,7 +40,7 @@ Related to [[Data Types]].
 		- `map = %{foo: "bar", hello: "world"}` returns `%{foo: "bar", hello: "world"}`
 		- `%{map | foo: "baz"}` returns `%{foo: "baz", hello: "world"}`
 			- There is a problem with this approach. It does require creating a new map. As all values in elixir are immutable.
-			- Attempting to update a key that doesn't exist will raise a KeyError. 
+			- Attempting to update a key that doesn't exist will raise a KeyError. z
 ```elixir
 map = %{:foo => "bar", "hello" => :world}
 # ^ returns %{:foo => "bar", "hello" => :world}
