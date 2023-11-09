@@ -61,6 +61,11 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 	- It uses the term ordering as defined in 
 		- `Enum.sort([5, 6, 1, 3, -1, 4])`
 			- Returns `[-1, 1, 3, 4, 5, 6]`
-	- It additionally uses the term ordering as mentioned in [[Comparisons]]. 
+	- It follows the same term ordering as mentioned in [[Comparisons]], so there may be some strange behavior when values of different types are in the same enumerable. 
+		- `Enum.sort([:foo, "bar", Enum, -1, 4])`
+			- Returns `[-1, 4, Enum, :foo, "bar"]`
+	- You may also define a custom sorting function. 
+		- `Enum.sort([%{:val => 4}, %{:val => 1}], fn(x, y) -> x[:val] > y[:val] end)`
+		- Returns `[%{val: 4}, %{val: 1}]`
 - `uniq`
 	- 
