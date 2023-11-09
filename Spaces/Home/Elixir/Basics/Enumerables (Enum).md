@@ -50,10 +50,12 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 			- Returns `[2, 4]`
 - `reduce`
 	- This function allows you to reduce the enumerable into a single value. 
-	- You can additionally supply an optional accumulator as well. It seems this value is just added at the 
+	- You can additionally supply an optional accumulator as well. It seems this value is just added at the end. 
 	- `Enum.reduce([1, 2, 3], 10, fn(x, acc) -> x + acc end)`
 		- Returns `16`
-	- 
+	- `Enum.reduce(["a","b","c"], "1", fn(x,acc)-> x <> acc end)`
+		- Returns `cba1`
+		- The function works in a stacking order, it starts with `1`, then stacks `a` on top, then stacks `b`, then finally `c`
 - `sort`
 	- 
 - `uniq`
