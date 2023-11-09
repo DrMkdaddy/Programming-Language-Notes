@@ -59,5 +59,6 @@ greet = fn
 greet.("Hello", "Sean")
 # ^ "Hi Sean"
 greeting 
-
+# ^ "Hello"
 ```
+ Note in the "Mornin'" example that the reassignment of greeting to "Mornin'" only happens inside the function. Outside of the function greeting is still "Hello".
