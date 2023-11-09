@@ -34,13 +34,20 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 	- Returns the minimal value in the enumerable. 
 		- `Enum.min([5, 3, 0, -1])`
 			- Returns `-1`
-		- If the 
+		- Can return the value of an anonymous function if the list is empty
+			- `Enum.max([], fn -> :foo end)`
+				- Returns `:foo` 
 - `max`
 	- Returns the maximal value in the enumerable. 
 		- `Enum.min([5, 3, 0, -1])`
 			- Returns `5`
+	- Can return the value of an anonymous function if the list is empty
+		- `Enum.min([], fn -> :foo end)`
+			- Returns `:foo` 
 - `filter`
-	- 
+	- This function allows you to filter values in a list in order to only return the values that evaluate to true in the provided anonymous function. 
+		- `Enum.filter([1, 2, 3, 4], fn(x) -> rem(x, 2) == 0 end)`
+			- Returns `[2, 4]`
 - `reduce`
 	- 
 - `sort`
