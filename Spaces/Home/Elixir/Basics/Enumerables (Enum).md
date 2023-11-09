@@ -31,9 +31,13 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 	- `Enum.map([0, 1, 2, 3], fn(x) -> x - 1 end)` 
 		- Returns `[-1, 0, 1, 2]`
 - `min`
-	- 
+	- Returns the minimal value in the enumerable. 
+		- `Enum.min([5, 3, 0, -1])`
+			- Returns `-1`
 - `max`
-	- 
+	- Returns the maximal value in the enumerable. 
+		- `Enum.min([5, 3, 0, -1])`
+			- Returns `5`
 - `filter`
 	- 
 - `reduce`
