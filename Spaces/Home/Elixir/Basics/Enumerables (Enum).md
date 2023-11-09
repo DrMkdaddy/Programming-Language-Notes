@@ -5,9 +5,9 @@ Related to [[Lists]] as this is a module in order to manipulate these objects, e
 
 Common Functions: 
 - all?
-	- 
+	- This function allows you to check a list, if any of them evaluate to `false` the function will return `false`.
 - any?
-	- 
+	- This function is a lot 
 - each
 	- 
 - map
