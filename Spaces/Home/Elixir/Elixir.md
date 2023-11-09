@@ -14,5 +14,3 @@ This is standard boiler plate but I want to list out the features that the elixi
 - It's scalable due to it's concurrency model. 
 - It also allows for hot-reloading. 
 - Additionally you can also perform meta-programming, allowing for the ability to "program the programming language."
-
-## Advantages and Disadvantages
