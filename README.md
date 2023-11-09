@@ -1,3 +1,6 @@
+---
+sticker: vault//SVG Icons/Nerd Fonts/head-minus-outline-987975.svg
+---
 I am learning Elixir right now. I will expand this now that I think about it to other languages perhaps. 
 
 
