@@ -30,6 +30,10 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 	- Map does the same thing as `each` but creates a new enumerable instead as a return. 
 	- `Enum.map([0, 1, 2, 3], fn(x) -> x - 1 end)` 
 		- Returns `[-1, 0, 1, 2]`
+	- `map_every`
+		- Allows you to hit every nth value in the list with a function. 
+			- `Enum.map_every([1, 2, 3, 4, 5, 6, 7, 8], 3, fn x -> x + 1000 end)`
+				- Returns `[1001, 2, 3, 1004, 5, 6, 1007, 8]`
 - `min`
 	- Returns the minimal value in the enumerable. 
 		- `Enum.min([5, 3, 0, -1])`
@@ -66,7 +70,16 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 			- Returns `[-1, 4, Enum, :foo, "bar"]`
 	- You may also define a custom sorting function. 
 		- `Enum.sort([%{:val => 4}, %{:val => 1}], fn(x, y) -> x[:val] > y[:val] end)`
-		- Returns `[%{val: 4}, %{val: 1}]
-	- Whole 
+			- Returns `[%{val: 4}, %{val: 1}]
+	- Without the custom sorting function: 
+		- `Enum.sort([%{:count => 4}, %{:count => 1}])`
+			- Returns `[%{count: 1}, %{count: 4}]`
 - `uniq`
+	- Returns the list without duplicates. 
+		- `Enum.uniq([1, 2, 3, 2, 1, 1, 1, 1, 1])`
+			- Returns `[1, 2, 3]`
+	- `uniq_by`
+		- This will also allow you to remove duplicates but you may provide a function in order to perform the comparisons. 
+			- `Enum.uniq_by([%{x: 1, y: 1}, %{x: 2, y: 1}, %{x: 3, y: 3}], fn coord -> coord.y end)`
+				- Returns `[%{x: 1, y: 1}, %{x: 3, y: 3}]`
 	- 
