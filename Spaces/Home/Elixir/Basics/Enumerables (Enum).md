@@ -57,6 +57,10 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 		- Returns `cba1`
 		- The function works in a stacking order, it starts with `1`, then stacks `a` on top, then stacks `b`, then finally `c`
 - `sort`
-	- 
+	- Allows you to sort an enumerable. 
+	- It uses the term ordering as defined in 
+		- `Enum.sort([5, 6, 1, 3, -1, 4])`
+			- Returns `[-1, 1, 3, 4, 5, 6]`
+	- It additionally uses the term ordering as mentioned in [[Comparisons]]. 
 - `uniq`
 	- 
