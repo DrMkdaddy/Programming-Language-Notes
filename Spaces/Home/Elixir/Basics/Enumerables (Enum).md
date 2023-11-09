@@ -22,7 +22,7 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 # Because of how the grouping is right to left, despite that the length of "six" is like like "one" and "two" that means it will be in its own group. It's like a slider on a tape, putting a cut where it finds a difference. 
 ```
 - `each`
-	- 
+	- In situations where you may need to iterate over a enumerable without having to create a new value. It allows you to
 - `map`
 	- 
 - `min`
