@@ -7,7 +7,11 @@ Common Functions:
 - `all?`
 	- This function allows you to check a list, if any of them evaluate to `false` the function will return `false`.
 - `any?`
-	- This function is much like `all?` except when a single value in the enumerable eva
+	- This function is much like `all?` except when a single value in the enumerable evaluates to `true` it will evaluate to true. 
+- `chunk_every`
+	- 
+- `chunk_by`
+	- 
 - `each`
 	- 
 - `map`
