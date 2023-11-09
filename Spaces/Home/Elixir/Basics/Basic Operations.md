@@ -6,8 +6,8 @@ Elixir provides several operators (single characters which perform some kind of 
 - Integers and Floats
 	- They both support basic arithmetic operators like 
 		- `* and /` for multiplication and division
-			- CAUTION: The `/` Operator will always return a float, in order to avoid that it is required to use the `div(dividend, divisor)` function in order to return a proper integer. Additionally the `rem(dividend, divisor)` function does the same work but for the remainder. 
-		- `+ and -` for addition and subtraction
+			- CAUTION: The `/` Operator will always return a float, in order to avoid that it is required to use the `{elixir icon} div(dividend, divisor)` function in order to return a proper integer. Additionally the `{elixir icon} rem(dividend, divisor)` function does the same work but for the remainder. 
+		- `{elixir icon} + and -` for addition and subtraction
 - Booleans
 	- Booleans have basic operators that are very close to logic gates.
 		- `and` and `or` are short-circuiting boolean operators. 
