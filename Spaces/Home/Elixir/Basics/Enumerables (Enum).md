@@ -10,9 +10,9 @@ Common Functions:
 	- This function is much like `all?` except when a single value in the enumerable evaluates to `true` it will evaluate to true. 
 - `chunk_every`
 	- This function will split an enumerable into several, equally sized chunks. 
-	- 
+	- the `:discard` argument will remove all of the values that remain after the chunking. 
 - `chunk_by`
-	- 
+	- This allows you to group each value based off the similar 
 - `each`
 	- 
 - `map`
