@@ -51,5 +51,13 @@ value
 
 There is also an example of pinning in a function clause. 
 ```elixir
+greeting = "Hello"
+greet = fn
+... >  (^greeting, name) -> "Hi #{name}"
+... >  (greeting, name) -> "#{greeting}, #{name}"
+... >  end
+greet.("Hello", "Sean")
+# ^ "Hi Sean"
+greeting 
 
 ```
