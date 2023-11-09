@@ -22,9 +22,14 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 # Because of how the grouping is right to left, despite that the length of "six" is like like "one" and "two" that means it will be in its own group. It's like a slider on a tape, putting a cut where it finds a difference. 
 ```
 - `each`
-	- In situations where you may need to iterate over a enumerable without having to create a new value. It allows you to
+	- In situations where you may need to iterate over a enumerable without having to create a new value. It allows you to iterate over a group using an anonymous function or similar. 
+	- `Enum.each(["one", "two", "three"], fn(s) -> IO.puts(s) end)` 
+		- Returns "one" \\n "two" \\n "three" \\n :ok
+		- Note this does return the :ok atom in order to indicate that the process what completed successfully. 
 - `map`
-	- 
+	- Map does the same thing as `each` but creates a new enumerable instead as a return. 
+	- `Enum.map([0, 1, 2, 3], fn(x) -> x - 1 end)` 
+		- Returns `[-1, 0, 1, 2]`
 - `min`
 	- 
 - `max`
