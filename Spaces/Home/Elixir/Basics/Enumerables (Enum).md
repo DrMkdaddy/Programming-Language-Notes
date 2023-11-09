@@ -49,6 +49,10 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 		- `Enum.filter([1, 2, 3, 4], fn(x) -> rem(x, 2) == 0 end)`
 			- Returns `[2, 4]`
 - `reduce`
+	- This function allows you to reduce the enumerable into a single value. 
+	- You can additionally supply an optional accumulator as well. It seems this value is just added at the 
+	- `Enum.reduce([1, 2, 3], 10, fn(x, acc) -> x + acc end)`
+		- Returns `16`
 	- 
 - `sort`
 	- 
