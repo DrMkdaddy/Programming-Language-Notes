@@ -38,4 +38,18 @@ x = 1
 x
 # ^ 2 The pinned pattern managed to work and the variable was also repinned
 ```
-In Elixir 1.2 this functionality was extended to support pins in 
+In Elixir 1.2 this functionality was extended to support pins in maps and function clauses. 
+```elixir
+key = "hello"
+%{^key => value} = %{"hello" => "world"}
+# ^ returns %{"hello" => "world"}
+value
+# ^ "world"
+%{^key => value} = %{:hello => "world"}
+# ^ ** (MatchError) no match of right hand side value: %{hello: "world"}
+```
+
+There is also an example of pinning in a function clause. 
+```elixir
+
+```
