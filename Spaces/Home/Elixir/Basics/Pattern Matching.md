@@ -26,3 +26,11 @@ value
 ```
 
 ### Pin Operator 
+The pin operator `{elixir} ^` will stop variable rebinding, keeping the previous match instead of changing to the new one. 
+
+```elixir
+x = 1
+# ^ Returns 1
+^x = 2
+# ^ ** (MatchError) no match of right hand side value: 2 This is the return because of how the previous value was 
+```
