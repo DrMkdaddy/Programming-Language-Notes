@@ -66,6 +66,7 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 			- Returns `[-1, 4, Enum, :foo, "bar"]`
 	- You may also define a custom sorting function. 
 		- `Enum.sort([%{:val => 4}, %{:val => 1}], fn(x, y) -> x[:val] > y[:val] end)`
-		- Returns `[%{val: 4}, %{val: 1}]`
+		- Returns `[%{val: 4}, %{val: 1}]
+	- Whole 
 - `uniq`
 	- 
