@@ -32,5 +32,10 @@ The pin operator `{elixir} ^` will stop variable rebinding, keeping the previous
 x = 1
 # ^ Returns 1
 ^x = 2
-# ^ ** (MatchError) no match of right hand side value: 2 This is the return because of how the previous value was 
+# ^ ** (MatchError) no match of right hand side value: 2 This is the return because of how the previous value was x = 1. Instead of rebinding it was pinned to the previous match 
+{x, ^x} = {2, 1}
+# ^ {2, 1}
+x
+# ^ 2 The pinned pattern managed to work and the variable was also repinned
 ```
+In Elixir 1.2 this functionality was extended to support pins in 
