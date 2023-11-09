@@ -82,4 +82,3 @@ Enum.chunk_by(["one", "two", "three", "four", "five", "six"], fn(x) -> String.le
 		- This will also allow you to remove duplicates but you may provide a function in order to perform the comparisons. 
 			- `Enum.uniq_by([%{x: 1, y: 1}, %{x: 2, y: 1}, %{x: 3, y: 3}], fn coord -> coord.y end)`
 				- Returns `[%{x: 1, y: 1}, %{x: 3, y: 3}]`
-	- 
