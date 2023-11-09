@@ -4,7 +4,7 @@ sticker: vault//SVG Icons/Nerd Fonts/group-by-ref-type-60311.svg
 Basic Data Types in Elixir: 
 - Integers
 	- Whole numbers, no decimals. They can be positive or negative. 
-	- This value also has support for binary, octal, and hexadecimal numbers as well, so `0b110`, `0o644`, and `0x1F` are all valid declarations. With the value after the 0 defining whether or not it's a binary, octal, or hexadecimal value. 
+	- This value also has support for binary, octal, and hexadecimal numbers as well, so `{elixir icon} 0b110`, `{elixir icon} 0o644`, and `0x1F` are all valid declarations. With the value after the 0 defining whether or not it's a binary, octal, or hexadecimal value. 
 	- Example definition: `myVar = 2`
 - Floats
 	- Numbers, with decimals. `2.0` < this is an example of a float despite the decimal being worth nothing. They can be positive or negative. 
