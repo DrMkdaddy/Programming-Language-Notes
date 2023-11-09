@@ -9,6 +9,7 @@ Common Functions:
 - `any?`
 	- This function is much like `all?` except when a single value in the enumerable evaluates to `true` it will evaluate to true. 
 - `chunk_every`
+	- This function will split an enumerable into several, equally sized chunks. 
 	- 
 - `chunk_by`
 	- 
