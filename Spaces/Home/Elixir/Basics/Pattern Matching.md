@@ -57,7 +57,7 @@ greet = fn
 ... >  (greeting, name) -> "#{greeting}, #{name}"
 ... >  end
 greet.("Hello", "Sean")
-# ^ "Hi Sean"
+# ^ "Hi Sean"1
 greeting 
 # ^ "Hello"
 ```
