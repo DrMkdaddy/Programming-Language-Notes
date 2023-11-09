@@ -1,7 +1,7 @@
 ---
 sticker: vault//SVG Icons/Nerd Fonts/type-hierarchy-60345.svg
 ---
-The Information from [[Data Types]] will be mentioned here. 
+Elixir provides several operators (single characters which perform some kind of duty) in order to manipulate and control several [[Data Types]], like strings, floats, integers, and more. 
 
 - Integers and Floats
 	- They both support basic arithmetic operators like 
