@@ -10,7 +10,7 @@ this is the order for the values and their comparisons.
 ```elixir
 number < atom < reference < function < port < pid < tuple < map < list < bitstring
 ```
-Many times there will be strange comparisons between types because of how this works. Perhaps javascript is similar but atleast this has rhyme and reason. 
+Many times there will be strange comparisons between types because of how the comparisons between types work. 
 
 Elixir has both string interpolation (very similar to Python's F Strings) and String Concatenation. 
 ```elixir
