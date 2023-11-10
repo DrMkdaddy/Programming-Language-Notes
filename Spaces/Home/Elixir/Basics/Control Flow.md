@@ -1,1 +1,1 @@
-Control Structures, like `{elixir}if and unless (?)` 
+Control Structures, like `{elixir}if and unless (?)`, `{elixir}cond` and `{elixir} with`
