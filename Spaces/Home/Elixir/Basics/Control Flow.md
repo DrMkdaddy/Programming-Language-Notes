@@ -77,6 +77,7 @@ with {:ok, first} <- Map.fetch(user, :first),
 # ^ Returns :error
 ```
 A larger example where `{elixir} with` can refactor and make a nested case statement more readable. 
+Before Refactor: 
 ```elixir
 case Repo.insert(changeset) do
   {:ok, user} ->
@@ -89,4 +90,33 @@ case Repo.insert(changeset) do
   error ->
     error
 end
+```
+After Refactor: 
+```elixir
+with {:ok, user} <- Repo.insert(changeset),
+     {:ok, token, full_claims} <- Guardian.encode_and_sign(user, :token, claims) do
+  important_stuff(token, full_claims)
+end
+```
+Also, with statements now support else! 
+```elixir
+import Integer
+Integer
+m = %{a: 1, c: 3}
+%{a: 1, c: 3}
+a =
+  with {:ok, number} <- Map.fetch(m, :a),
+    true <- is_even(number) do
+      IO.puts "#{number} divided by 2 is #{div(number, 2)}"
+      :even
+  else
+    :error ->
+      IO.puts("We don't have this item in map")
+      :error
+    _ ->
+      IO.puts("It is odd")
+      :odd
+  end
+It is odd
+:odd
 ```
