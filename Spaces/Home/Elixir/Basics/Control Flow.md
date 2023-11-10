@@ -57,3 +57,36 @@ end
 ```
 
 ### `{elixir}with` Statements
+This is used in situations where you may use a nested `{elixir}case` statement or situations where you can't cleanly pipe things together, the expression is made up of the keywords, generators, and finally an expression. 
+Generators will be elaborated more in [[List Comprehensions]] but for now they use [[Pattern Matching]] to compare the right side (<-) to the left. 
+```elixir
+user = %{first: "Sean", last: "Callan"}
+%{first: "Sean", last: "Callan"}
+with {:ok, first} <- Map.fetch(user, :first),
+     {:ok, last} <- Map.fetch(user, :last),
+     do: last <> ", " <> first
+# ^ Returns"Callan, Sean"
+```
+If the expression fails to match the non-matching keyword will be value will be returned. 
+```elixir 
+user = %{first: "doomspork"}
+%{first: "doomspork"}
+with {:ok, first} <- Map.fetch(user, :first),
+     {:ok, last} <- Map.fetch(user, :last),
+     do: last <> ", " <> first
+# ^ Returns :error
+```
+A larger example where `{elixir} with` can refactor and make a nested case statement more readable. 
+```elixir
+case Repo.insert(changeset) do
+  {:ok, user} ->
+    case Guardian.encode_and_sign(user, :token, claims) do
+      {:ok, token, full_claims} ->
+        important_stuff(token, full_claims)
+      error ->
+        error
+    end
+  error ->
+    error
+end
+```
