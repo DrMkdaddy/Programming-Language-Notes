@@ -1,3 +1,4 @@
+### If and Unless Statements
 Control Structures, like `{elixir}if and unless (?)`, `{elixir}cond` and `{elixir} with`
 Example of if statements. 
 ```elixir
@@ -15,6 +16,8 @@ unless is_integer("hello") do
 end
 # ^ "Not an Int"
 ```
+
+### Case Statements
 Case statements allow you to match against multiple patterns. 
 ```elixir
 case {:ok, "Hello World"} do
@@ -26,3 +29,4 @@ end
 ```
 Without the `__` variable the match will fail, raising an error. Additionally it serves as an else statement that "everything else" will be funneled into. 
 The `case` statement uses [[Pattern Matching]] so in order to match against existing variables you will need to use the pin operator. 
+
