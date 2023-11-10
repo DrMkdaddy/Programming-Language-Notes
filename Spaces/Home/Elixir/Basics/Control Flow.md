@@ -1,4 +1,7 @@
-### If and Unless Statements
+---
+sticker: vault//SVG Icons/Nerd Fonts/format-text-wrapping-overflow-986383.svg
+---
+### `{elixir} if and unless` Statements
 Control Structures, like `{elixir}if and unless (?)`, `{elixir}cond` and `{elixir} with`
 Example of if statements. 
 ```elixir
@@ -17,7 +20,7 @@ end
 # ^ "Not an Int"
 ```
 
-### Case Statements
+### `{elixir}case` Statements
 Case statements allow you to match against multiple patterns. 
 ```elixir
 case {:ok, "Hello World"} do
@@ -30,7 +33,7 @@ end
 Without the `__` variable the match will fail, raising an error. Additionally it serves as an else statement that "everything else" will be funneled into. 
 The `case` statement uses [[Pattern Matching]] so in order to match against existing variables you will need to use the pin operator. 
 
-### Cond Statements 
+### `{elixir} cond` Statements 
 When you need to match conditions rather than values you can use `cond` statements. 
 ```elixir 
 cond do
@@ -47,11 +50,10 @@ This like else if or elif.
 Like `{elixir}case` you will need to use a "catch all" clause in order to match any extraneous circumstances. 
 ```elixir
 cond do
-
   7 + 1 == 0 -> "Incorrect"
-
   true -> "Catch all"
-
 end
 "Catch all"
 ```
+
+### `{elixir}with` Statements
