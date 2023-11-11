@@ -5,7 +5,8 @@ sticker: vault//SVG Icons/Nerd Fonts/function-variant-985201.svg
 There functions do not have names, they're meant to be passed around to functions, as seen in the [[Enum Module]] section. In order to define one you will need to define it using either the `{elixir}fn ... end` syntax or the [[Capture Operator]]. 
 
 ### Pattern Matching
-
+[[Pattern Matching]] isn't limited to variables in elixir, because functions are first class objects it can be applied to them as well. 
+Elixir uses Pattern Matching in order to 
 
 ## Named Functions 
 
