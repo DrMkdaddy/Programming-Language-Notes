@@ -6,7 +6,7 @@ There functions do not have names, they're meant to be passed around to function
 
 ### Pattern Matching
 [[Pattern Matching]] isn't limited to variables in elixir, because functions are first class objects it can be applied to them as well. 
-Elixir uses Pattern Matching in order to
+Elixir uses Pattern Matching in order to handle function overloading, where the function can have different versions of itself with differing parameters. 
 ```elixir
 handle_result = fn
   {:ok, result} -> IO.puts "Handling result..."
@@ -23,6 +23,7 @@ Handling result...
 handle_result.({:error})
 An error has occurred!
 :ok
+# ^ The IO.puts function returns :ok once it finishes the print
 ```
 
 ## Named Functions 
