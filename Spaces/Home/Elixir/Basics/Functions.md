@@ -89,5 +89,6 @@ Greeter1.hello(fred)
 "Hello, Fred"
 # ^ When the function is called with the fred map it'll only pattern match the key provided. 
 ```
+The function will fail if you do not provide the key the function expects, if the function does not find the matching map it will fail. However, because the function only will look for the
 ![](https://media.tenor.com/uJOLBspTDLoAAAAd/cat-dance.gif)
 Yayyyyyy!!!!!!!!!!!! Functions!!!!!!!!!!!!!!!!!!
