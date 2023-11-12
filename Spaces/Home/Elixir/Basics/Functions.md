@@ -89,6 +89,6 @@ Greeter1.hello(fred)
 "Hello, Fred"
 # ^ When the function is called with the fred map it'll only pattern match the key provided. 
 ```
-The function will fail if you do not provide the key the function expects, if the function does not find the matching map it will fail. However, because the function only will look for the
+The function will fail if you do not provide the key the function expects, if the function does not find the matching map it will fail. However, because the function only will look for the :name key in the map it will result in function not knowing anything about the rest of the collection. In order to retain that information the map will need to be assigned to its own variable in the function in order to be used.  
 ![](https://media.tenor.com/uJOLBspTDLoAAAAd/cat-dance.gif)
 Yayyyyyy!!!!!!!!!!!! Functions!!!!!!!!!!!!!!!!!!
