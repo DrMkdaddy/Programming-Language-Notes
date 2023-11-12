@@ -67,7 +67,7 @@ Greeter2.hello("Fred", "Jane")
 ```
 
 #### Function Naming and Arguments. 
-
+Functions are named by the name combined with the arity (number of arguments), resulting in 
 
 ![](https://media.tenor.com/uJOLBspTDLoAAAAd/cat-dance.gif)
 Yayyyyyy!!!!!!!!!!!! Functions!!!!!!!!!!!!!!!!!!
