@@ -63,10 +63,11 @@ Greeter2.hello("Fred")
 "Hello, Fred"
 Greeter2.hello("Fred", "Jane")
 "Hello, Fred and Jane"
-# Has overloaded functions. 
+# Has overloaded functions. The behaviour will differ pertaining to the inputs and whether that match the pattern or not. 
 ```
 
-### 
+#### Function Naming and Arguments. 
+
 
 ![](https://media.tenor.com/uJOLBspTDLoAAAAd/cat-dance.gif)
 Yayyyyyy!!!!!!!!!!!! Functions!!!!!!!!!!!!!!!!!!
