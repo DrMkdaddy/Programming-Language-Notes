@@ -6,7 +6,6 @@ There functions do not have names, they're meant to be passed around to function
 
 ### Pattern Matching
 [[Pattern Matching]] isn't limited to variables in elixir, because functions are first class objects it can be applied to them as well. 
-Elixir uses Pattern Matching in order to handle function overloading, where the function can have different versions of itself with differing parameters. 
 ```elixir
 handle_result = fn
   {:ok, result} -> IO.puts "Handling result..."
@@ -42,6 +41,17 @@ Greeter.hello("Sean")
 defmodule Greeter do
   def hello(name), do: "Hello, " <> name
 end
+
+defmodule Length do
+  def of([]), do: 0
+  def of([_ | tail]), do: 1 + of(tail)
+end
+Length.of []
+0
+Length.of [1, 2, 3]
+3
+# ^ The result differ. One returns zero when given an empty array and the other returns the length of the array. 
+# The function is also overloaded. 
 ```
 
 ![](https://media.tenor.com/uJOLBspTDLoAAAAd/cat-dance.gif)
