@@ -52,6 +52,18 @@ Length.of [1, 2, 3]
 3
 # ^ The result differ. One returns zero when given an empty array and the other returns the length of the array. 
 # The function is also overloaded. 
+defmodule Greeter2 do
+  def hello(), do: "Hello, anonymous person!"   # hello/0
+  def hello(name), do: "Hello, " <> name        # hello/1
+  def hello(name1, name2), do: "Hello, #{name1} and #{name2}"
+ # hello/2
+end
+Greeter2.hello()
+"Hello, anonymous person!"
+Greeter2.hello("Fred")
+"Hello, Fred"
+Greeter2.hello("Fred", "Jane")
+"Hello, Fred and Jane"
 ```
 
 ![](https://media.tenor.com/uJOLBspTDLoAAAAd/cat-dance.gif)
