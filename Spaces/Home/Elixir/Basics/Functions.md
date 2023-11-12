@@ -37,7 +37,11 @@ end
 
 Greeter.hello("Sean")
 # ^ Returns "Hello, Sean"
-# If the function's body spans only one line you can just
+# If the function's body spans only one line you can just use a do: shortcut.
+
+defmodule Greeter do
+  def hello(name), do: "Hello, " <> name
+end
 ```
 
 ![](https://media.tenor.com/uJOLBspTDLoAAAAd/cat-dance.gif)
