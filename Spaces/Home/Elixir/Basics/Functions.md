@@ -70,7 +70,24 @@ Greeter2.hello("Fred", "Jane")
 Functions are named by the name combined with the arity (number of arguments). So a function like `hello` with no arguments would be referred to as `hello/0`, that same function with one or two arguments would be referred to as `hello/1` and `hello/2` respectively. 
 
 #### Functions and [[Pattern Matching]] 
-Functions use Pattern Matching behind the scenes with the arguments they're called with. If you set the function up in order to accept a 
+Functions use Pattern Matching behind the scenes with the arguments they're called with. If you set the function up in order to accept a [[Collections#Maps|Map]] but only care about a particular key, you can pattern match the argument on the presence of that key.
+```elixir
+defmodule Greeter1 do
+  def hello(%{name: person_name}) do
+    IO.puts "Hello, " <> person_name
+  end
+end
+```
+```elixir
+fred = %{
+name: "Fred",
+age: "95",
+favorite_color: "Taupe"
+}
 
+Greeter1.hello(fred)
+"Hello, Fred"
+# ^ When the function is called with the fred map it'll only pattern match the key provided. 
+```
 ![](https://media.tenor.com/uJOLBspTDLoAAAAd/cat-dance.gif)
 Yayyyyyy!!!!!!!!!!!! Functions!!!!!!!!!!!!!!!!!!
