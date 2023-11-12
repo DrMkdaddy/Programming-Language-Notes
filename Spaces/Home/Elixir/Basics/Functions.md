@@ -70,7 +70,7 @@ Greeter2.hello("Fred", "Jane")
 Functions are named by the name combined with the arity (number of arguments). So a function like `hello` with no arguments would be referred to as `hello/0`, that same function with one or two arguments would be referred to as `hello/1` and `hello/2` respectively. 
 
 #### Functions and [[Pattern Matching]] 
-
+Functions use Pattern Matching behind the scenes with the arguments they're called with. If you set the function up in order to accept a 
 
 ![](https://media.tenor.com/uJOLBspTDLoAAAAd/cat-dance.gif)
 Yayyyyyy!!!!!!!!!!!! Functions!!!!!!!!!!!!!!!!!!
