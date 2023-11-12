@@ -27,7 +27,18 @@ An error has occurred!
 ```
 
 ## Named Functions 
+Named functions have to be defined in a module using the `{elixir} def` keyword. Functions defined in a module are available for other modules to use. 
+```elixir
+defmodule Greeter do
+  def hello(name) do
+    "Hello, " <> name
+  end
+end
 
+Greeter.hello("Sean")
+# ^ Returns "Hello, Sean"
+# If the function's body spans only one line you can just
+```
 
 ![](https://media.tenor.com/uJOLBspTDLoAAAAd/cat-dance.gif)
 Yayyyyyy!!!!!!!!!!!! Functions!!!!!!!!!!!!!!!!!!
