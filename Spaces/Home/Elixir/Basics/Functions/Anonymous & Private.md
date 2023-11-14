@@ -1,0 +1,2 @@
+### Anonymous Functions 
+There functions do not have names, they're meant to be passed around to functions, as seen in the [[Enum Module]] section. In order to define one you will need to define it using either the `{elixir}fn ... end` syntax or the [[Capture Operator]]. 

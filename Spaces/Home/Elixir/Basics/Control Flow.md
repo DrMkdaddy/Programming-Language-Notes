@@ -31,7 +31,7 @@ end
 # ^ Returns "Hello World"
 ```
 Without the `__` variable the match will fail, raising an error. Additionally it serves as an else statement that "everything else" will be funneled into. 
-The `case` statement uses [[Pattern Matching]] so in order to match against existing variables you will need to use the pin operator. 
+The `case` statement uses [[Spaces/Home/Elixir/Basics/Pattern Matching]] so in order to match against existing variables you will need to use the pin operator. 
 
 ### `{elixir} cond` Statements 
 When you need to match conditions rather than values you can use `cond` statements. 
@@ -58,7 +58,7 @@ end
 
 ### `{elixir}with` Statements
 This is used in situations where you may use a nested `{elixir}case` statement or situations where you can't cleanly pipe things together, the expression is made up of the keywords, generators, and finally an expression. 
-Generators will be elaborated more in [[List Comprehensions]] but for now they use [[Pattern Matching]] to compare the right side (<-) to the left. 
+Generators will be elaborated more in [[List Comprehensions]] but for now they use [[Spaces/Home/Elixir/Basics/Pattern Matching]] to compare the right side (<-) to the left. 
 ```elixir
 user = %{first: "Sean", last: "Callan"}
 %{first: "Sean", last: "Callan"}
